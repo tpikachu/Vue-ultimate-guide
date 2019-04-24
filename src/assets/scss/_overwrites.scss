@@ -1,0 +1,104 @@
+@import "variables";
+
+.md-app-content.md-content.md-theme-default {
+    height: initial;
+}
+.md-button.md-theme-default.md-raised:not([disabled]).md-pink {
+    background-color: $pink;
+    color: #fff;
+}
+
+.md-app {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;	
+    opacity: 0;
+	transition: .7s;
+	&.md-app_is_initialized {
+		opacity: 1;
+	}
+}
+
+.md-drawer {
+    width: 280px;
+    min-width: 280px;
+    max-width: calc(100vw - 125px);
+}
+
+.md-dialog,
+.md-card,
+.md-button:not(.md-stepper-header) {
+    border-radius: 4px;
+}
+
+.md-speed-dial {
+    z-index: 99;
+}
+
+.md-stepper-number {
+	min-width: 24px;
+}
+.md-stepper-text {
+	white-space: normal;
+	font-size: 1rem;
+	line-height: 1.25;
+}
+.md-steppers.md-vertical .md-stepper-header {
+	height: 72px;
+}
+.md-steppers.md-vertical .md-stepper:after {
+    bottom: -16px;    
+    top: 56px;
+}
+.md-done .md-icon {
+    & > svg { display: none; }
+    &:before {
+        content: "check";
+        font-family: Material Icons;
+        font-size: 1.125rem;
+        text-rendering: optimizeLegibility;
+        -webkit-font-feature-settings: "liga";
+        font-feature-settings: "liga";
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.md-default {
+    &,
+    .md-icon {
+        color: $primary!important;
+    }
+}
+.md-button-content {
+    display: flex;
+    align-items: center;
+}
+
+.md-steppers.md-vertical .md-stepper-content.md-active {
+    padding: 0;
+}
+
+@media (min-width: 601px) {
+	.md-app-content.md-content.md-theme-default {
+		background-color: transparent;
+	}
+	.md-app.md-fixed .md-app-scroller {
+		overflow: auto;
+		background-color: $light;
+		background-image: url(assets/images/bg.png);
+		background-attachment: fixed;
+		background-size: cover;
+	}
+}
+@media (max-width: 600px) {
+    .md-dialog {
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,119 @@
+@import "figures/step-list-figure";
+@import "figures/step-list-figure_shape_rounded";
+@import "figures/questions-figure";
+@import "figures/brands-figure";
+@import "figures/formula";
+@import "figures/extreme-aversion-figure";
+
+$font-size: 1.125rem;
+$margin: $font-size * 4;
+
+a.figure,
+a.figure__my-small {
+	display: block;
+}
+.figure {
+	margin-top: $margin;
+	margin-bottom: $margin;
+    .figure .figure__title {
+        font-size: $font-size;
+    }
+}
+.figure__mt {
+	margin-top: $margin;
+}
+.figure__mb {
+	margin-bottom: $margin;
+}
+.figure__my {
+	margin-bottom: $margin;
+	margin-top: $margin;
+}
+.figure_style_primary {
+	background-color: $primary;
+	.figure__description {
+		color: #fff;
+	}
+}
+.figure__title {
+	text-align: center;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	line-height: 1.25;
+	font-weight: 600;
+	color: #616161;
+}
+.figure__note,
+.figure__source {
+	display: block;
+	font-style: normal;
+	font-size: 12px;
+	color: $primary;
+	margin-top: 1rem;
+}
+.figure__source {
+	text-align: right;
+}
+.figure__image {
+	margin-bottom: 1rem;
+}
+.figure__description {
+	font-size: 1rem;
+	font-weight: normal;
+	letter-spacing: 1px;
+    text-align: center;
+    color: #212121;
+}
+.figure_is_note {
+	padding: 1.5rem;
+	figcaption {
+		font-family: inherit;
+	}
+}
+
+@media (max-width: 1200px) {
+	.figure__text-with-images {
+		margin: 0;
+		.md-layout-item:first-child p {
+			margin-bottom: 4.5rem;
+		}
+		.md-layout-item:last-child p {
+			margin-top: 4.5rem;
+			margin-bottom: 0;
+		}
+		img {
+			width: 100%;
+		}
+		.md-layout-item.md-size-50 {
+			min-width: 100%;
+			max-width: 100%;
+			flex: 0 1 100%;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.figure__my-small {
+		margin-bottom: $margin;
+		margin-top: $margin;
+	}
+}
+@media (min-width: 961px) {
+	.figure {
+		margin-left: -1.5rem;
+		margin-right: -1.5rem;
+	}
+}
+@media (min-width: 1200px) {
+	.figure_is_note {
+		padding: 3.125rem;
+	}
+	.figure__text-with-images {
+		p {
+			padding: 3.125rem;
+			margin: 0;
+		}
+		.md-layout-item:nth-child(odd) p {
+			padding-left: 1.625rem;
+		}
+	}
+}

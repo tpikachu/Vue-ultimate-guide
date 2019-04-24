@@ -1,0 +1,303 @@
+@import "variables";
+@import "fonts";
+
+$font-size: 1.15rem;
+$margin: 1rem;
+
+* {
+	-webkit-overflow-scrolling: touch;
+}
+body {
+	font-family: "Belbo-Book", sans-serif;
+	font-size: $font-size;
+	line-height: 1.5;
+}
+article {
+	color: #333333;
+	line-height: 1.75;
+	* {
+		margin-top: 0;
+	}
+	p,
+	ul,
+	section {
+		font-family: 'Libre Baskerville', serif;
+	}
+	li {
+		margin-bottom: 10px;
+	}
+
+	figure {
+		margin: 0;
+	}
+
+	h1 {
+		font-family: 'TiemposHeadline', serif;
+		color: #212121;
+		margin-top: 0;
+	}
+	h2, h3, h4, h5, h6, figcaption {
+		font-family: 'Belbo-Book', serif;
+	}
+	h2 {
+		font-size: $font-size * 1.5;
+		line-height: 1.25;
+		color: $primary;
+		margin-bottom: $margin;
+		margin-top: 3.125rem;
+	}
+	h3 {
+		font-size: $font-size * 1.25;
+	}
+	h1, h3, h4, h5, h6 {
+		margin-bottom: .5rem;
+		line-height: 1.25;
+	}
+	h3, h4, h5, h6 {
+		font-weight: 600;
+		color: $accent;
+	}
+	header {
+		margin-bottom: $margin;
+		h2 {
+			margin-bottom: $margin / 2;
+		}
+	}
+	sup {
+		font-size: $font-size * 0.75;
+	}
+	img {
+		margin-bottom: $margin;
+	}
+	address > dl {
+		display: flex;
+		font-style: normal;
+		font-size: $font-size * 1.25;
+		dt {
+			color: #212121;
+			font-weight: bold;
+		}
+		dd {
+			margin-left: 12px;
+			margin-bottom: 0;
+		}
+	}
+	dd {
+		margin-left: 0;
+		margin-bottom: $margin;
+	}
+	dt, strong, b {
+		font-weight: bold;
+		color: #212121;
+	}
+	
+	hr {
+		border: none;
+		border-top: 2px solid $primary;
+		max-width: 60px;
+	}
+	blockquote {
+		margin: 0;
+		font-style: italic;
+		color: #212121;
+		cite {
+			display: block;
+			text-align: right;
+			font-size: $font-size * 0.875;
+			margin-bottom: $margin;
+		}
+	}
+	cite {
+		font-style: normal;
+	}
+	
+	a:not(.md-button) {
+		text-decoration: underline;
+	}
+}
+
+.has-border {
+	border-radius: 3px;
+	border: $primary 4px solid;
+}
+
+.dl-inline {
+	dt,
+	dd {
+		display: inline;
+	}
+	dd {
+		margin-left: .5rem;
+	}
+}
+
+[class*=alert_] {
+	padding: 1rem;
+	margin: 0;
+	margin-bottom: $margin;
+}
+.alert_color_primary {
+	background-color: $primary;
+	color: #fff;
+}
+.bg-primary {
+	background-color: $primary;
+}
+.m-0 {
+	margin: 0!important;
+}
+.mb-0 {
+	margin-bottom: 0!important;
+}
+.mt-0 {
+	margin-top: 0!important;
+}
+.my-0 {
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+}
+.my-1 {
+	margin-top: $margin!important;
+	margin-bottom: $margin!important;
+}
+.mt-1 {
+	margin-top: $margin!important;
+}
+.mb-1 {
+	margin-bottom: $margin!important;
+}
+.p-1 {
+	padding: $margin!important;
+}
+.p-0 {
+	padding: 0!important;
+}
+.pr-1 {
+	padding-right: $margin!important;
+}
+.pl-1 {
+	padding-left: $margin!important;
+}
+.pt-1 {
+	padding-top: $margin!important;
+}
+.pt-2 {
+	padding-top: ($margin * 2)!important;
+}
+.mb-2 {
+	margin-bottom: ($margin * 2)!important;
+}
+.mx-auto {
+	margin-left: auto!important;
+	margin-right: auto!important;
+}
+.text-center {
+	text-align: center;
+}
+.text-dark {
+	color: $dark;
+}
+.text-white {
+	color: #fff;
+}
+.text-left {
+	text-align: left!important;
+}
+.text-primary {
+	color: $primary;
+}
+.text-accent {
+	color: $accent;
+}
+.border-accent {
+	border-color: $accent;
+}
+.d-block {
+	display: block;
+}
+.w-100 {
+	width: 100%;
+}
+.text-bold {
+	font-weight: bold;
+}
+[columns] li {
+	margin-bottom: 0;
+}
+.show-on-large {
+	display: none;
+}
+@media (min-width: 961px) {
+	article {
+		h1 {
+			font-size: $font-size * 2.5;
+		}
+		dd {
+			margin-left: $margin * 2;
+		}	
+		ul {
+			dd {
+				margin-left: 0;
+			}
+		}
+	}
+	.show-on-large {
+		display: block;
+	}
+	.md-layout-item { 
+		padding-left: .5rem; 
+		padding-right: .5rem;
+	}
+	.md-layout-item.md-size-50:nth-child(odd) {
+		padding-left: 0;
+	}
+	.md-layout-item.md-size-50:nth-child(even) {
+		padding-right: 0;
+	}
+	.hide-on-large {
+		display: none!important;
+	}
+	.extra-h1 {
+		font-size: $font-size * 4;
+	}
+	.extra-lead {
+		font-size: $font-size * 1.5;
+	}
+
+	[columns="2"] {
+		column-count: 2;
+
+	}
+
+	.mb-large-0 {
+		margin-bottom: 0;
+	}
+	.p-large-2 {
+		padding: ($margin * 2)!important;
+	}
+	.p-large-3 {
+		padding: ($margin * 3)!important;
+	}
+	.pr-large-2 {
+		padding-right: ($margin * 2)!important;
+	}
+	.pt-large-1 {
+		padding-top: $margin!important;
+	}
+	.ml-large-2 {
+		margin-left: ($margin * 1.625)!important;
+	}
+	.pr-large-3 {
+		padding-right: ($margin * 3.125)!important;
+	}
+}
+
+@media (min-width: 601px) {
+	.lead {
+		font-size: $font-size * 1.125;
+	}
+	.extra-lead {
+		font-size: $font-size * 1.25;
+		line-height: 1.25;
+	}
+}

@@ -1,0 +1,36 @@
+@import '../variables';
+
+$fontSize: 40px;
+
+.questions-figure {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+    width: 240px;
+    height: 240px;
+    color: $primary;
+    font-family: "TiemposHeadline-Black", sans-serif;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 1rem;
+    & > li {
+        position: absolute;
+        border-radius: 50%;
+        border: 4px solid $accent;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    & > li:nth-child(3) {
+        align-items: center;
+    }
+    @for $i from 0 through 2 {
+        & > li:nth-child(#{$i + 1}) { 
+            top: $fontSize * $i;
+            bottom: $fontSize * $i;
+            left: $fontSize * $i;
+            right: $fontSize * $i;
+        }
+    }
+}

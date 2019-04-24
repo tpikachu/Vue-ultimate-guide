@@ -1,0 +1,42 @@
+.step-list-figure_shape_rounded {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	& > li {
+		position: relative;
+		flex: 1;
+        font-size: .875rem;
+        letter-spacing: 2px;
+		line-height: 1.2;
+		color: #212121;
+		font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		min-height: 120px;
+        min-width: 120px;
+        max-width: 120px;
+        max-width: 120px;
+        padding: 24px;
+        border-radius: 50%;
+        background-color: $primary;
+        margin: 12px;
+        color: #fff;
+		background-size: 100% 100%;
+		&:nth-child(1) { background-color: #42AB7D; }
+		&:nth-child(2) { background-color: #176B73; }
+		&:nth-child(4) { background-color: #E8A6A6; }
+		&:nth-child(5) { background-color: #FA5C66; }
+    }
+    i {
+        color: #fff!important;
+        font-size: 36px!important;
+        margin: 0;
+        margin-bottom: 12px;
+    }
+}

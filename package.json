@@ -1,0 +1,102 @@
+{
+  "name": "chefhero",
+  "version": "0.1.0",
+  "description": "App «The Ultimate Guide to Running a Restaurant»",
+  "homepage": "https://belaevslava.github.io/chefhero/dist/index.html",
+  "previews": {
+    "directory": "previews",
+    "main": {
+      "path": "/thumbs/start.png"
+    },
+    "images": [
+      {
+        "path": "start.png",
+        "title": "Start"
+      },
+      {
+        "path": "introduction.png",
+        "title": "Introduction"
+      },
+      {
+        "path": "chapter_1.png",
+        "title": "Chapter 1"
+      },
+      {
+        "path": "chapter_2.png",
+        "title": "Chapter 2"
+      },
+      {
+        "path": "chapter_3.png",
+        "title": "Chapter 3"
+      },
+      {
+        "path": "chapter_4.png",
+        "title": "Chapter 4"
+      },
+      {
+        "path": "chapter_5.png",
+        "title": "Chapter 5"
+      },
+      {
+        "path": "chapter_6.png",
+        "title": "Chapter 6"
+      },
+      {
+        "path": "chapter_7.png",
+        "title": "Chapter 7"
+      },
+      {
+        "path": "Chapter 8.png",
+        "title": "chapter_8"
+      },
+      {
+        "path": "chapter_9.png",
+        "title": "Chapter 9"
+      },
+      {
+        "path": "Chapter 10.png",
+        "title": "chapter_10"
+      },
+      {
+        "path": "Chapter 11.png",
+        "title": "chapter_11"
+      },
+      {
+        "path": "conclusion.png",
+        "title": "Conclusion"
+      },
+      {
+        "path": "about.png",
+        "title": "about"
+      }
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fancyapps/fancybox": "^3.5.2",
+    "chart.js": "^2.7.3",
+    "chartjs-plugin-labels": "^1.1.0",
+    "cpx": "^1.5.0",
+    "jquery": "^3.3.1",
+    "vue": "^2.5.17",
+    "vue-material": "^1.0.0-beta-10.2",
+    "vue-router": "^3.0.1",
+    "vuelidate": "^0.7.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }
+}

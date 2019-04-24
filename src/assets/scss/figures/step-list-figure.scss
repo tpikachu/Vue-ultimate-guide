@@ -1,0 +1,38 @@
+.step-list-figure {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	& > li {
+		position: relative;
+		flex: 1;
+		font-size: 1rem;
+		line-height: 1.2;
+		color: #212121;
+		font-weight: bold;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 24px 24px 24px 36px;
+		margin-right: -6px;
+		min-height: 150px;
+		max-width: 150px;
+		background-image: url(assets/images/step-list__item_color_primary.svg);
+		background-size: 100% 100%;
+		&:last-child:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 32px;
+			height: 16px;
+			background-color: #fff;
+		}
+		&:nth-child(1) { background-image: url(assets/images/step-list__item_color_dark.svg); }
+		&:nth-child(2) { background-image: url(assets/images/step-list__item_color_accent.svg); }
+		&:nth-child(4) { background-image: url(assets/images/step-list__item_color_success.svg); }
+	}
+}

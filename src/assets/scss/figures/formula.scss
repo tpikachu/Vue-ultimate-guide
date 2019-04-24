@@ -1,0 +1,41 @@
+@import '../variables';
+
+.figure_is_formula {
+    overflow: auto;
+}
+.formula__wrapper {
+    overflow: auto;
+    text-align: center;
+}
+.formula__wrapper + .formula__wrapper {
+    margin-top: 1rem;
+}
+.formula,
+.formula__expression-item {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    white-space: nowrap;
+}
+.formula {
+    font-size: .875rem;
+    color: $dark;
+    background-color: #F2F2F2;
+    padding: 12px 24px;
+    border-radius: $border-radius;
+}
+.formula__operator,
+.formula__equals-sign {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+.formula__operator {
+    color: $accent;
+}
+.formula__delimiter {
+    padding: 0;
+    margin: 2px 0;
+    max-width: 100%;
+    border-color: $accent;
+}

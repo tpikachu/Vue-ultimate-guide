@@ -1,0 +1,26 @@
+.brands-figure {
+	margin: 0;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	overflow: scroll;
+	img {
+		margin-bottom: 0;
+	}
+}
+.brands-figure__link {
+	margin: 0 1rem;
+    min-width: 110px;
+    max-width: 110px;
+}
+
+@media (min-width: 960px) {
+	.brands-figure {
+		flex-wrap: wrap;
+		justify-content: center;
+		overflow: initial;
+	}
+	.brands-figure__link {
+		margin: 0 1rem 1rem;
+	}
+}

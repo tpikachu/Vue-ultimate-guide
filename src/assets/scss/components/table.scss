@@ -1,0 +1,100 @@
+@import '../variables';
+
+$border-color: rgba(0,0,0,.12);
+
+.figure_is_table {
+    .figure__title {
+        position: relative;
+        background-color: #D9EBE3;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-bottom: 0;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -51px;
+            display: block;
+            height: 51px;
+            background-color: inherit;
+        }
+    }
+}
+.table {
+    font-size: 14px;
+    border-spacing: 0;
+    border-collapse: separate;
+    color: #212121;
+    tbody td {
+        &:first-child {
+            border-left: 1px solid $border-color;
+        }
+        &:last-child {
+            border-right: 1px solid $border-color;
+        }
+    }
+    td, th {
+        padding: 12px;
+        border-bottom: 1px solid $border-color;
+        &:nth-child(1) {
+            font-size: 1.125rem;
+            color: $primary;
+        }
+        &:nth-child(even) {
+            background-color: #EFEFF4;
+        }
+        &:not(:first-child) {
+            font-weight: bold;
+        }
+    }
+    th {
+        text-align: left;
+        background-color: #D9EBE3;
+        color: #fff;
+        &.bg-primary { background-color: $primary; }
+        &.bg-primary-light { background-color: $primary-light; }
+        &.bg-danger { background-color: $accent; }
+        &.bg-success { background-color: $success; }
+        &:not(:first-child) {
+            border-bottom: rgba(0,0,0,.12) 6px solid;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .table {
+        &, tbody, tr, th, td {
+            display: block;
+            width: 100%;
+            border-width: 0!important;
+        }
+        tr {
+            border-width: 4px!important;
+        }
+        thead {
+            display: none;
+        }
+        tbody {
+            td[data-title] { 
+                position: relative;
+                padding-top: 3rem;
+                &:before {
+                    content: attr(data-title);
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: $primary;
+                    color: #fff;
+                    padding: .5rem 1rem;
+                }
+            }
+        }
+        tr {
+            border: $primary 4px solid;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+    }
+}
